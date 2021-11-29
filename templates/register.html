@@ -1,0 +1,64 @@
+<!-- Store this code in 'register.html' file inside the 'templates' folder -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Sign Up - Movie Recommendation</title>
+  </head>
+  <body>
+
+    <h2 class = "h2" style = "text-align:center; margin-top:3%;margin-bottom:3%; padding:10px;">Movie Recommendation App</h2>
+   
+    <div class = "container " style="background-color:#e0ebeb;max-width:40%;p-4">
+    
+      <div class = "row gx-5">
+ <div id = "form-sidebar" class = "col-120 col-lg-12 col-md-12 col-sm-12 col-xs-12 p-4 " style = "text-align:center"> 
+        <div class = "bg-light p-1">
+        <h4 class = " h4 m-1">Register</h4>
+          <hr/>
+				<form action="{{ url_for('register') }}" method="post">
+				<div class="msg" style="color: red">{{ msg }}</div> </br>
+					<label> Username :</label>
+					<input id="username" name="username" type="text" placeholder="Enter Your Username" class="textbox"/></br></br>
+					<label> Password :</label>
+					<input id="password" name="password" type="password" placeholder="Enter Your Password" class="textbox"/></br></br>
+					<label> E-mail ID:</label>
+					<input id="email" name="email" type="text" placeholder="Enter Your Email ID" class="textbox"/></br></br>
+					<input type="submit" class="btn" value="Sign Up" style="padding: 6px 20px; background-color: #236B8E;color: #FFFFFF;font-weight: bold;
+				border-radius: 10px;" ></input> </br> </br> 
+				</form>
+			<p class="bottom">Already have an account? <a class="bottom" href="{{url_for('login')}}"> Sign In here</a></p>
+        </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://cdn.bokeh.org/bokeh/release/bokeh-2.4.0.min.js"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.4.0.min.js"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.bokeh.org/bokeh/release/bokeh-tables-2.4.0.min.js"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.bokeh.org/bokeh/release/bokeh-gl-2.4.0.min.js"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.bokeh.org/bokeh/release/bokeh-mathjax-2.4.0.min.js"
+        crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+
