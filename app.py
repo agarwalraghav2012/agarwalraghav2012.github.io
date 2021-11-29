@@ -1,8 +1,8 @@
 # Store this code in 'app.py' file
 
 from flask import Flask, render_template, request, redirect, url_for, session
-# from flask_mysqldb import MySQL
-# import MySQLdb.cursors
+from flask_mysqldb import MySQL
+import MySQLdb.cursors
 import re
 from flask import Flask
 from flask import request
@@ -30,7 +30,7 @@ app.secret_key = 'your secret key'
 
 app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = '12345'
+app.config['MYSQL_PASSWORD'] = 'mypass'
 app.config['MYSQL_DB'] = 'proj'
 
 mysql = MySQL(app)
